@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: connectify21
+    env: node
+    buildCommand: npm install && npm run build && cd src
+    startCommand: node server.js
